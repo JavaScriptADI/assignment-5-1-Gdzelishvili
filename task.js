@@ -43,3 +43,13 @@ const totalPrice = products.reduce((acc, product) => acc + product.price, 0);
 const averagePrice = totalPrice / products.length;
 
 console.log(averagePrice);
+
+
+// 2. count average words per description
+
+products.forEach(description => {
+    let splitCount = [];
+    products.description.split("");
+    splitCount++;
+
+});
