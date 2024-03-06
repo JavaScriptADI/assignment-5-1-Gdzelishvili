@@ -1,19 +1,3 @@
-# Homework5
-
-კომენტარის სახით ახსენით თითოეული ხაზი რას აკეთებს.
-
-შემდეგ შეასრულეთ მოცემული ამოცანები:
-
-1. count average price
-2. count average words per description
-3. count average characters per description
-4. count maximum words in descriptions
-5. count minimum price in descriptions
-
-
-(მოგიწევთ გაარკვიოთ რა არის object-ი)
-
-```javascript
 const PRODUCT_COUNT = 50;
 
 const products = [];
@@ -45,5 +29,3 @@ for (let i = 0; i < PRODUCT_COUNT; i++)
         price: getRandomInt(500, 5000),
         description: getRandomString(getRandomInt(300, 1000))
     })
-
-```
