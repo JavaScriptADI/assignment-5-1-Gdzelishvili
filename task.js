@@ -97,3 +97,16 @@ products.forEach(product => {
 });
 
 console.log(maxWords);
+
+// 5. count minimum price in descriptions
+
+let minPrice = 0
+
+products.forEach(product => {
+    if(minPrice<product.price){
+        minPrice = product.price
+    }
+    
+});
+
+console.log(minPrice);
