@@ -82,3 +82,18 @@ const totalCharacters = charactersLength.reduce((acc, character) => acc + charac
 countAverageCharacter = totalCharacters / charactersLength.length
 
 console.log(countAverageCharacter);
+
+
+// 4. count maximum words in descriptions
+
+let maxWords = 0;
+
+products.forEach(product => {
+    let splitCount = product.description.split(" ");
+    if(maxWords<splitCount.length + 1){
+        maxWords = splitCount.length + 1
+    }
+    
+});
+
+console.log(maxWords);
