@@ -64,3 +64,21 @@ for (let i = 0; i < descriptionSplitCount.length-1; i++) {
 countAverageWords = wordCuntForDescription / descriptionSplitCount.length
 
 console.log(parseInt(countAverageWords));
+
+
+// 3. count average characters per description
+
+let charactersLength = [];
+
+products.forEach(product => {
+    let splitCount = product.description.split(" ");
+    charactersLength.push(product.description.length - splitCount.length);
+    
+});
+
+const totalCharacters = charactersLength.reduce((acc, character) => acc + character, 0);
+
+
+countAverageCharacter = totalCharacters / charactersLength.length
+
+console.log(countAverageCharacter);
