@@ -47,9 +47,20 @@ console.log(averagePrice);
 
 // 2. count average words per description
 
-products.forEach(description => {
-    let splitCount = [];
-    products.description.split("");
-    splitCount++;
+let descriptionSplitCount = [];
 
+products.forEach(product => {
+    let splitCount = product.description.split(" ");
+    descriptionSplitCount.push(splitCount.length + 1);
 });
+
+let wordCuntForDescription = 0
+
+for (let i = 0; i < descriptionSplitCount.length-1; i++) {
+    wordCuntForDescription += descriptionSplitCount[i];
+    
+}
+
+countAverageWords = wordCuntForDescription / descriptionSplitCount.length
+
+console.log(parseInt(countAverageWords));
